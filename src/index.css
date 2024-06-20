@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #000000;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+main {
+  background: #151418;
+  background-image: url('../public/blob-haikei.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+  transition: 0.2s ease-in;
+
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+h4{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  justify-content: center;
+  background: linear-gradient(90deg, rgb(42, 32, 235) 20%, rgba(0,212,255,1) 100%);
+  border-radius: 10px;
+  font-size: 1px;
+  padding: 5px 10px;
+
+
+}
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+.btn {
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-weight: 400;
+  outline: none;
+}
+
+.btn-shadow{
+  box-shadow: 0px 2px 5px rgba(160, 170, 180, 0.6);
+
+}
+
+.btn-shadow:hover{
+  box-shadow: 0px 3px 8px rgba(160, 170, 180, 0.9);
+}
+
+.PrimaryBtn {
+  padding: 12px 20px;
+  border: none;
+  background: rgb(57, 134, 250);
+  color: #f6f6f6;
+}
+
+.SecondaryBtn{
+  padding: 10px 18px;
+  border: 2px solid rgb(57, 134, 250);
+  color: #ffffff;
+  margin-right: 1rem;
+}
+
+.PrimaryBtn:hover {
+  background: rgb(18, 111, 250);
+}
+
+.SecondaryBtn:hover {
+  background: #e7f1fa;
+  color: #000
+}
+
+.Container {
+  max-width: 1000px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.BigCard {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.AboutBio{
+  text-align: justify;
+  max-width: 750px;
+  margin: 0 auto;
+  color: #151418;
+  line-height: 1.6;
+}
+
+.tagline2 {
+  text-align: left;
+  max-width: 650px;
+  margin: 0;
+  color: #151418;
+  line-height: 1.6;
+}
+
+.tagline2 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+
+.ProjectWrapper {
+  margin-top: -1rem;
+  
+}
+.SectionTitle{
+  font-size: 30px;
+  font-weight: 100px;
+  text-align: center;
+ color: #ffffff;
+ margin-bottom: 50px;
+ border-radius: 200px;
+background: linear-gradient(90deg, rgb(113, 106, 253) 20%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+justify-content: center;
+border-width: 1px;
+}
+/* Footer styles */
+footer {
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #000000;
+  font-weight: 40;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Adjustments for left, mid, and right footer sections */
+.leftFooter,
+.midFooter,
+.rightFooter {
+  flex: 1;
+  text-align: center;
+}
+
+.leftFooter > h4,
+.rightFooter > h4 {
+  font-family: "Roboto";
+  font-size: 1.4vw;
+  margin-bottom: 10px;
+}
+
+.midFooter > h1 {
+  font-size: 3vw;
+  color: aqua;
+  margin-top: 40px; /* Adjust margin for smaller screens */
+}
+
+.midFooter > p {
+  color: darkgrey;
+}
+
+.subscribe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.subscribe-container input[type="email"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid #eb4034;
+  outline: none;
+  font-size: 1.2vw;
+  background: transparent;
+  color: white;
+}
+
+.subscribe-container button {
+  padding: 10px 20px;
+  font-size: 1.2vw;
+}
+
+.rightFooter > a {
+  font-size: 1.3vw;
+  margin: 5px;
+}
+
+.logofooter {
+  width: 100px;
+  height: 100px;
+}
+
+.sticker {
+  margin-top: 10px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 576px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .midFooter > h1 {
+    font-size: 5vw; /* Adjust font size for smaller screens */
+    margin-top: 20px; /* Adjust margin for smaller screens */
+  }
+
+  .subscribe-container input[type="email"] {
+    font-size: 3vw; /* Adjust font size for smaller screens */
+  }
+
+  .subscribe-container button {
+    font-size: 3vw; /* Adjust font size for smaller screens */
+  }
+
+  .rightFooter > a {
+    font-size: 3.5vw; /* Adjust font size for smaller screens */
+  }
+}
+
+
+
+
